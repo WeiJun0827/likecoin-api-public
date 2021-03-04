@@ -12,6 +12,8 @@ import allRoutes from './routes/all';
 
 const path = require('path');
 
+require('dd-trace').init();
+
 const app = express();
 
 const host = process.env.HOST || '127.0.0.1';
